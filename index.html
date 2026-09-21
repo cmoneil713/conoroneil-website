@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Conor O'Neil | Hardware Engineering</title><link href="site.css" rel="stylesheet"/><script>
+// Make returns from project pages land deterministically on the section anchor,
+// without replaying the site's normal smooth-scroll animation.
+if (performance.getEntriesByType('navigation')[0]?.type === 'back_forward') {
+  history.scrollRestoration = 'manual';
+  document.documentElement.style.scrollBehavior = 'auto';
+}
+</script>
+<style>
+/* Final homepage media positioning refinements */
+.cnc-home-media img { transform: translateY(14px) !important; }
+.woodworking-home-media img { transform: translateY(14px) !important; }
+@media (max-width:900px) {
+  .cnc-home-media img { transform: translateY(10px) !important; }
+  .woodworking-home-media img { transform: translateY(10px) !important; }
+}
+</style>
+</head><body id="top"><header class="nav"><a class="brand-with-photo" href="index.html"><img alt="" class="nav-headshot" src="assets/headshot.png"/><span class="brand-name">CONOR O'NEIL</span><span class="brand-role">Principal Mechanical Engineer</span><span class="brand-location">Tampa, FL</span></a><nav><a href="index.html#work">Professional Work</a><a href="index.html#capabilities">Capabilities</a><a href="index.html#personal">Personal</a><a href="assets/Conor O'Neil Resume.pdf" download="Conor O'Neil Resume.pdf">Resume</a><a class="pill" href="index.html#contact">Contact</a></nav></header>
+<main>
+<section class="hero"><div class="wrap"><h1>From complex problems to production hardware.</h1><div class="sub">Product Development · Robotics · Automation</div><p class="lede">Over 12 years of developing robotic, electromechanical, and optical systems from early concepts through detailed design, manufacturing, and production.</p><div class="hero-actions"><a class="button button-dark" href="assets/Conor O'Neil Resume.pdf" download="Conor O'Neil Resume.pdf">View Resume</a><a class="button button-accent" href="assets/Conor O'Neil Portfolio.pdf" download="Conor O'Neil Portfolio.pdf">View Portfolio PDF</a></div></div></section>
+<div class="wrap metrics">
+<div class="metric"><strong>12+</strong><span>Years of Experience</span></div>
+<div class="metric patent-metric"><strong>4</strong><span>Patents - <a href="patents.html" onclick="history.replaceState(null,'','#top')">VIEW HERE</a></span></div>
+<div class="metric education-metric"><strong>B.S. Mechanical Engineering</strong><span>UMass Amherst - Cum Laude</span></div>
+</div>
+<section class="section" id="work"><div class="wrap"><h2>Professional Work</h2><div class="work-grid">
+<a class="work-card" href="projects/scoop-system-architecture.html" onclick="history.replaceState(null,'','#work')"><div class="thumb"><img alt="Scoop robotic trailer unloader" src="assets/images/scoop-hero.jpg"/></div><div class="text"><div class="company">Berkshire Grey / SoftBank Robotics</div><h3>Scoop — System Architecture</h3><p>System architecture, conveyor layout, package scooping, and chassis packaging for a robotic trailer-unloading system.</p></div></a>
+<a class="work-card" href="projects/suction-gripper.html" onclick="history.replaceState(null,'','#work')"><div class="thumb"><img alt="Patent illustration of suction gripper" src="assets/images/compliant-gripper-2.png"/></div><div class="text"><div class="company">Berkshire Grey / SoftBank Robotics</div><h3>Suction Gripper End Effector</h3><p>Compliant gripping and high-flow vacuum-control concepts for handling irregular packages in unstructured trailers.</p></div></a>
+<a class="work-card" href="projects/precision-optomechanics.html" onclick="history.replaceState(null,'','#work')"><div class="thumb"><img alt="5-DoF lens focus flexure" src="assets/images/focus-flexure.png"/></div><div class="text"><div class="company">Cognex</div><h3>Precision Optomechanics</h3><p>5-DoF lens-focus development and imager-alignment tolerance analysis for automated vision sensor manufacturing.</p></div></a>
+</div></div></section>
+<section class="section capabilities-section" id="capabilities"><div class="wrap"><h2>Capabilities</h2><div class="cap-grid">
+<div class="cap">Mechanical Design &amp; Product Development</div><div class="cap">Robotics &amp; Automation Equipment</div><div class="cap">Precision Mechanisms &amp; Optomechanics</div><div class="cap">Rapid Prototyping &amp; Fabrication</div><div class="cap">GD&amp;T, Tolerance Analysis &amp; FEA</div><div class="cap">Sensor &amp; Motor Electrical Design</div><div class="cap">DFM &amp; Production Support</div>
+</div></div></section>
+<section class="section" id="personal"><div class="wrap personal-copy"><h2>Always building something.</h2><p class="big">I’ve been designing and making things for as long as I can remember — from childhood racing toboggans, go-karts, and other overly ambitious contraptions to CNC machines, automated furniture, and woodworking projects I’m still building today.</p><p>That curiosity is why I became an engineer in the first place. I genuinely enjoy figuring out how things work, learning new tools and technologies, and finding better ways to turn an idea into something real.</p><div class="personal-grid">
+<a class="personal-card" href="projects/cnc-machine.html" onclick="history.replaceState(null,'','#personal')"><div class="personal-media cnc-home-media"><img alt="Enclosed CNC machine" src="assets/images/cnc-machine-real.png"/></div><div class="body"><h3>CNC Machine</h3><p>Enclosed portable CNC machine with onboard electronics and a structure designed for minimal deflection.</p></div></a>
+<a class="personal-card" href="projects/workstation.html" onclick="history.replaceState(null,'','#personal')"><div class="personal-media workstation-home-media"><video aria-label="Powered CAD workstation in motion" autoplay="True" class="preview-video" loop="True" muted="True" playsinline="True"><source src="assets/cad-workstation-loop-v39.mp4" type="video/mp4"/></video></div><div class="body"><h3>Powered Workstation</h3><p>Adjustable heavy-duty motorized workbench with an integrated high-performance CAD workstation.</p></div></a>
+<a class="personal-card" href="projects/woodworking.html" onclick="history.replaceState(null,'','#personal')"><div class="personal-media woodworking-home-media"><img alt="Wood step stool" src="assets/woodworking/bench.jpg"/></div><div class="body"><h3>Woodworking</h3><p>Furniture, laser engraving, and all sorts of other projects.</p></div></a>
+</div></div></section>
+<section class="contact" id="contact"><div class="wrap"><h2>Need experienced hardware engineering support?</h2><p class="availability">Open to full-time, part-time &amp; contract opportunities.</p><a class="button email-button" href="mailto:Conor%20O%27Neil%20%3Cme%40conoroneil.com%3E">me@conoroneil.com</a> <a class="button button-dark" href="assets/Conor O'Neil Resume.pdf" download="Conor O'Neil Resume.pdf">View Resume</a><a class="linkedin-link" href="https://www.linkedin.com/in/conoroneil/" target="_blank" rel="noopener noreferrer" aria-label="Conor O'Neil on LinkedIn"><span class="linkedin-icon">in</span><span>LinkedIn</span></a></div></section>
+</main><footer class="wrap"><span>© 2026 Conor O'Neil</span><span>Hardware Engineering · Product Development · Robotics · Automation</span></footer><script>
+(() => {
+  const nav = performance.getEntriesByType('navigation')[0];
+  if (nav?.type !== 'back_forward' || !location.hash) return;
+  const target = document.querySelector(location.hash);
+  if (!target) return;
+  const place = () => target.scrollIntoView({behavior:'auto', block:'start'});
+  place();
+  requestAnimationFrame(() => { place(); requestAnimationFrame(() => {
+    place();
+    document.documentElement.style.scrollBehavior = '';
+  }); });
+})();
+</script></body></html>
