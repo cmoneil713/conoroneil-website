@@ -754,7 +754,4 @@ body:has(.patents-list) .back-link{margin-bottom:10px}
     left:-24px !important;
     top:8px !important;
   }
-  .work-card[href="projects/precision-optomechanics.html"] h3{
-    color:#0066cc !important;
-  }
 }
