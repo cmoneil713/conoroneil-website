@@ -749,5 +749,5 @@ body:has(.patents-list) .back-link{margin-bottom:10px}
 
 /* Desktop only: nudge Precision Optomechanics homepage image slightly left. */
 @media(min-width:601px){
-  .precision-home-media img{position:relative !important;left:-6px !important}
+  .precision-home-media img{position:relative !important;left:-12px !important}
 }
