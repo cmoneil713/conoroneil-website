@@ -697,3 +697,45 @@ body:has(.patents-list) .back-link{margin-bottom:10px}
   .nav nav a:nth-child(4){grid-column:5 / span 4 !important;margin:0 !important}
   .nav nav a:nth-child(5){grid-column:9 / span 4 !important;margin:0 !important}
 }
+
+
+/* Mobile header final: force exact 2-row placement without affecting desktop. */
+@media(max-width:600px){
+  .nav nav{
+    display:grid !important;
+    grid-template-columns:repeat(12,minmax(0,1fr)) !important;
+    grid-template-rows:auto auto !important;
+    column-gap:2px !important;
+    row-gap:7px !important;
+  }
+  .nav nav a:nth-child(1){
+    grid-row:1 !important;
+    grid-column:3 / span 4 !important;
+    justify-self:end !important;
+    margin:0 5px 0 0 !important;
+  }
+  .nav nav a:nth-child(2){
+    grid-row:1 !important;
+    grid-column:7 / span 4 !important;
+    justify-self:start !important;
+    margin:0 0 0 5px !important;
+  }
+  .nav nav a:nth-child(3){
+    grid-row:2 !important;
+    grid-column:1 / span 4 !important;
+    justify-self:center !important;
+    margin:0 !important;
+  }
+  .nav nav a:nth-child(4){
+    grid-row:2 !important;
+    grid-column:5 / span 4 !important;
+    justify-self:center !important;
+    margin:0 !important;
+  }
+  .nav nav a:nth-child(5){
+    grid-row:2 !important;
+    grid-column:9 / span 4 !important;
+    justify-self:center !important;
+    margin:0 !important;
+  }
+}
