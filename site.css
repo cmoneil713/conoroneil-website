@@ -656,7 +656,7 @@ body:has(.patents-list) .back-link{margin-bottom:10px}
 @media(min-width:601px){
   /* Desktop only: image size stays fixed; narrow the copy to the marked line. */
   .scoop-hero-photo{max-width:480px !important;margin-left:auto !important}
-  .scoop-overview-copy{max-width:410px !important}
+  .scoop-overview-copy{max-width:440px !important}
 }
 @media(max-width:600px){
   /* Mobile only: keep the two top-row links close but visibly separated. */
