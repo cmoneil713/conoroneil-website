@@ -739,3 +739,9 @@ body:has(.patents-list) .back-link{margin-bottom:10px}
     margin:0 !important;
   }
 }
+
+
+/* Mobile header micro-adjustment: Capabilities only; preserve explicit grid placement. */
+@media(max-width:600px){
+  .nav nav a:nth-child(2){position:relative !important;left:4px !important}
+}
