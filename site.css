@@ -680,3 +680,38 @@ body:has(.patents-list) .back-link{margin-bottom:10px}
     margin-left:2px !important;
   }
 }
+
+
+/* Mobile header definitive layout: use flex rows, not the inherited 12-column grid. */
+@media(max-width:600px){
+  .nav nav{
+    display:flex !important;
+    flex-wrap:wrap !important;
+    justify-content:center !important;
+    align-content:center !important;
+    column-gap:0 !important;
+    row-gap:7px !important;
+  }
+  .nav nav a:nth-child(1),
+  .nav nav a:nth-child(2){
+    grid-column:auto !important;
+    justify-self:auto !important;
+    flex:0 0 auto !important;
+    margin:0 !important;
+  }
+  .nav nav a:nth-child(1){margin-right:12px !important}
+  .nav nav a:nth-child(2){margin-left:12px !important}
+  .nav nav a:nth-child(2)::after{
+    content:"";
+    flex-basis:100%;
+  }
+  .nav nav a:nth-child(3),
+  .nav nav a:nth-child(4),
+  .nav nav a:nth-child(5){
+    grid-column:auto !important;
+    justify-self:auto !important;
+    flex:0 0 auto !important;
+    margin-left:10px !important;
+    margin-right:10px !important;
+  }
+}
