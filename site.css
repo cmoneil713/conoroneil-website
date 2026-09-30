@@ -762,7 +762,7 @@ body:has(.patents-list) .back-link{margin-bottom:10px}
 
 /* 2026-09-30: Desktop-only CNC Mechanical Structure image enlargement. */
 @media(min-width:901px){
-  .cnc-mechanical .case-grid{grid-template-columns:.9fr 1.1fr}
-  .cnc-mechanical .case-visual-grid.two{gap:14px}
-  .cnc-mechanical .case-photo{padding:8px}
+  .cnc-mechanical .case-grid{grid-template-columns:.84fr 1.16fr}
+  .cnc-mechanical .case-visual-grid.two{gap:12px}
+  .cnc-mechanical .case-photo{padding:5px}
 }
