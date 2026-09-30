@@ -766,3 +766,9 @@ body:has(.patents-list) .back-link{margin-bottom:10px}
   .cnc-mechanical .case-visual-grid.two{gap:12px}
   .cnc-mechanical .case-photo{padding:5px}
 }
+
+/* 2026-09-30: Optically center cutting board and stool within desktop project cards. */
+@media(min-width:901px){
+  .wood-grid figure:nth-child(2) img,
+  .wood-grid figure:nth-child(3) img{transform:translateY(18px)}
+}
