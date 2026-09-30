@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Conor O'Neil | Hardware Engineering</title><link rel="prefetch" as="image" href="assets/woodworking/plaque-henry-carly.jpg"/>
-<link rel="prefetch" as="image" href="assets/woodworking/plaque-laura-colton.jpg"/>
-<link rel="prefetch" as="image" href="assets/woodworking/plaque-toby.jpg"/>
-<link href="site.css?v=20260930-19" rel="stylesheet"/>
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Conor O'Neil | Hardware Engineering</title><link href="site.css?v=20260930-19" rel="stylesheet"/>
 <style>
 /* Final homepage media positioning refinements */
 .cnc-home-media img { transform: translateY(14px) !important; }
@@ -47,4 +44,26 @@
   window.addEventListener('pageshow',resumePreviewVideos);
   document.addEventListener('visibilitychange',function(){if(!document.hidden) resumePreviewVideos();});
 })();
-</script></body></html>
+</script><script>
+(function(){
+  var plaqueImages=[
+    'assets/woodworking/plaque-henry-carly.jpg',
+    'assets/woodworking/plaque-laura-colton.jpg',
+    'assets/woodworking/plaque-toby.jpg'
+  ];
+  function warmPlaqueCache(){
+    plaqueImages.forEach(function(src){
+      var img=new Image();
+      img.decoding='async';
+      img.src=src;
+      if(img.decode){ img.decode().catch(function(){}); }
+    });
+  }
+  if(document.readyState==='complete'){
+    warmPlaqueCache();
+  }else{
+    window.addEventListener('load',warmPlaqueCache,{once:true});
+  }
+})();
+</script>
+</body></html>
